@@ -1,5 +1,5 @@
 <?php
-if (!($mysqli = mysqli_connect("localhost:3306", "root", "qwerty"))) //change localhost
+if (!($mysqli = mysqli_connect("localhost:8080", "root", "qwerty"))) 
 	exit("Could not connect: ".mysqli_connect_error().PHP_EOL);
 if (!($queries = file_get_contents("rush00.sql")))
 	exit("Could not import database.".PHP_EOL);

@@ -17,7 +17,7 @@ if (mysqli_num_rows($result) > 0)
 		'<a href="'.$itemPage.$row['id'].'">'.
 		'<img src="'.$ipath.'" />'.
 		'<div>'.$row['name'].' '.
-		money_format('%!10.2n &euro;', (float)$row['price'] / 100.).
+		money_format('%!10.2n &ZAR;', (float)$row['price'] / 100.).
 		'</div>'.
 		"</a></div></div>";
 }

@@ -27,8 +27,8 @@
 	{
 		if ($value !== '1')
 			return false;
-		$name = array("Big-plug", "Axe", "Screwdriver", "Pen", "Cellphone", "Frying-Oil", "Keyboard");
-		$name = $name[rand(0, 6)];
+		$name = array("KAT", "LSD", "Ecstacy", "MDMA", "Coco");
+		$name = $name[rand(0, 5)];
 		$price = rand(10, 200) * 10;
 		$cat = rand(1, 5);
 		$query = "INSERT INTO `items` (`id`, `category_id`, `category_id2`, `name`, `price`) VALUES (NULL, ".$cat.", 0, '".$name."', ".$price.");";
